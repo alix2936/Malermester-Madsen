@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+:root {
+    --brand-color: #FFCA27;
+    --dark-color: #155E75;
+    --mid-color: #E5E7EB;
+    --light-color: #F8FAFC;
+    }
+
+.logo{
+    padding: 15px;
+    padding-top: 45px;
+}
+
+nav{
+    background-color:var(--light-color);
+    width: 100%;
+    z-index: 100;
+    height: 5em;
+}
+
+.menu-items{
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px 0 20px;
+    height: 60px;
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu-items a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.button{
+    background-color: var(--brand-color);
+    color: var(--light-color);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-decoration:none;
+}
+
+.menu-items li:nth-child(2){
+    margin-left:auto;
+  }
+
+.menu-items li{
+    margin-right: 50px;
+}
+
+
+.menu-items li img{
+    width: 150px;
+}
+
+.hero-image{
+    background-image: url(Images/Screenshot\ 2023-02-16\ 165713.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 130vh;
+}
+.waves{
+    margin-top: -700px;
+    height:30em;
+}
+
+.inputs{
+    display: flex;
+    margin-top: -80px;
+    padding-left: 250px;
+    gap: 30px;
+    color: var(--light-color);
+}
+
+.send-button{
+    color: var(--brand-color);
+}
+
+article{
+    padding: 20px;
+    text-align: center;
+}
+
+article h2{
+    color: var(--brand-color);
+}
+
+article p{
+    color: var(--dark-color);
+}
+
+.tilbud{
+    font-weight: bold;
+    max-width: 120px;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.pris{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 140px;
+    padding-top: 20px;
+}
+
+.først-container{
+    background-color: var(--light-color);
+    text-align: center;
+    padding: 40px;
+}
+
+.først-container  h2{
+    color: var(--dark-color);
+    font-size: 40px;
+}
+
+.først-container p, li{
+    color: var(--dark-color);
+    list-style-type: none;
+}
+
+.først-container p{
+    padding-top: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.først-container .gulv-tekst{
+    padding: 20px;
+}
+
+.anden-container{
+    background-color: var(--dark-color);
+    text-align: center;
+    padding: 40px;
+}
+
+.anden-container h2{
+    color: var(--light-color);
+    font-size: 40px;
+}
+
+.anden-container p{
+    color: var(--light-color);
+    padding-top: 15px;
+    max-width: 600px;
+    margin: auto;
+}
+
+.anden-container .gulv-tekst{
+    padding-top: 20px;
+}
+
+.mobilenumber{
+    font-size: 40px;
+    padding-bottom: 25px;
+}
+
+.gulv-tekst{
+    color: var(--brand-color);
+    list-style-type:none;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: var(--mid-color);
+    padding: 100px;
+    gap: 20px;
+}
+
+article{
+    border:1px solid #F8FAFC;
+    background-color: var(--light-color);
+}
+
+.anmeldelse{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-color: var(--mid-color);
+    padding: 100px;
+    gap: 20px;
+}
+
+.anmeldelse h2{
+    color: var(--dark-color);
+    text-align: left;
+}
+
+.anmeldelse p{
+    text-align: left;
+    padding-top: 15px;
+}
+
+.anmeldelse article{
+    padding: 30px;
+}
+
+footer{
+    background-color: var(--mid-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 20px;
+}
+
+footer p{
+    color: var(--dark-color);
+}
+
+footer h2{
+    padding-bottom: 10px;
+    color: var(--dark-color);
+}
+.info{
+    list-style-type: none;
+}
+
+.brand{
+    margin-top: -60px;
+}
+
+footer img{
+    max-width: 100px;
+    max-height: 100px; 
+}
+
+#burger {
+    display: none;
+    justify-content: start;
+    cursor: pointer;
+    order: 3;
+    color: #e5e5e5;
+    font-size: 1em;
+    padding-top: 0;
+}
+
+@media (max-width: 420px) {
+
+#burger {
+        display: flex;
+        order: 2;
+}
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+}
+
+}
+
+
